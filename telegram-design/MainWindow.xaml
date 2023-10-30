@@ -5,13 +5,182 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:telegram_design"
         mc:Ignorable="d"
-        Title="MainWindow" Height="492" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="580" Width="900">
+    <Grid >
 
-           
-        
-       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.7*" />
+            <ColumnDefinition Width="1.2*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Chat place-->
+        <DockPanel  Width="565" Height="55" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Background="WhiteSmoke" >
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Eva Summer" VerticalAlignment="Top" FontSize="17" Margin="15 10 0 0" Grid.Column="0"/>
+                <TextBlock Text="online" VerticalAlignment="Bottom" FontSize="15"  Margin="15 0 0 5" Foreground="Blue" Grid.Column="0"/>
+
+                <Image Source="https://static.thenounproject.com/png/2042439-200.png" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 10 40 10" Height="20"/>
+                <Image Source="https://cdn.icon-icons.com/icons2/933/PNG/512/show-more-button-with-three-dots_icon-icons.com_72547.png" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 10 10 10" Height="20"/>
+
+
+
+            </Grid>
+
+        </DockPanel>
+        <Grid Background="Gray" Grid.Column="1" Margin="0 55 0 55"></Grid>
+
+        <DockPanel Width="565" Height="55" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Bottom" Background="WhiteSmoke">
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="https://static.thenounproject.com/png/1335325-200.png" Grid.Column="0" HorizontalAlignment="Left" Margin="10 0 0 0" VerticalAlignment="Center"  Height="20" Width="44" />
+
+                <TextBlock Text="Write a message..." VerticalAlignment="Top" FontSize="17" Margin="60 15 0 0" Grid.Column="0" Foreground="Gray"/>
+
+                <Image Source="https://www.clipartkey.com/mpngs/b/93-938883_smiley-face-clipart-black-and-white.png" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 10 40 10" Height="20"/>
+                <Image Source="https://cdn0.iconfinder.com/data/icons/android-application-solid/32/Voice_Recorder-512.png" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 10 10 10" Height="20"/>
+
+
+
+            </Grid>
+        </DockPanel>
+
+        <!--#endregion-->
+
+        <!--Contacts -->
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <DockPanel Grid.Column="0" Grid.Row="0"  Width="335" Height="55" Background="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Top">
+
+            <Image Source="https://image.freepik.com/free-icon/menu--three-horizontal-parallel-lines--ios-7-interface-symbol_318-37101.jpg" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15"/>
+            <TextBox Margin="10 15 15 15" Background="LightGray" Text="Search" Padding="3"/>
+
+        </DockPanel>
+
+
+        <StackPanel Grid.Row="1" Margin="0 55 0 0">
+            <DockPanel Height="60" Background="Blue">
+
+                <Grid>
+                    <Label Content="Eva Summer" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="White" />
+                    <Label Content="Remind me of a Chinese prover..." HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="White"/>
+                    <Label Content="11:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="White"/>
+
+                    <Border Background="OrangeRed" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="ES" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="Alexandra Smith" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="this is amazing" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Gray"/>
+                    <Label Content="10:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"/>
+
+                    <Border Background="Orange" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="AS" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="Mike Apple" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="😃Sticker" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Blue"/>
+                    <Label Content="9:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"/>
+
+                    <Border Background="Brown" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="MA" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="👤👤Evaning Club" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="Eva: Photo" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Blue"/>
+                    <Label Content="8:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"/>
+
+                    <Border Background="Green" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="EC" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="👤👤Old Pitates" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="Max: Yo-ho-ho" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Blue"/>
+                    <Label Content="7:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"/>
+
+                    <Border Background="LightBlue" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="OP" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="Max Bright" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="How about some coffee" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Gray"/>
+                    <Label  HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black">
+                        <Image Source="https://i.pinimg.com/originals/48/fc/9e/48fc9e4a0ffbddac470e312e0aac0bde.jpg"  Height="20" Margin="0 0 30 0"/>
+                    </Label>
+                    <Label Content="6:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"/>
+
+                    <Border Background="Blue" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="MB" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="Natalia Parker" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="Ok,great)" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Gray"/>
+                    <Label  HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black">
+                        <Image Source="https://i.pinimg.com/originals/48/fc/9e/48fc9e4a0ffbddac470e312e0aac0bde.jpg"  Height="20" Margin="0 0 30 0"/>
+                    </Label>
+                    <Label Content="5:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"/>
+                    <Border Background="Purple" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="NP" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+            <DockPanel Height="60" Background="White">
+
+                <Grid>
+                    <Label Content="Davy Jones" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="50 5 0 0" Foreground="Black" />
+                    <Label Content="Keynote.pdf" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"  Margin="50 0 0 5" Foreground="Blue"/>
+                    <Label  Content="4:00" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12"  Margin="50 5 0 10" Foreground="Black"></Label>
+
+                    <Border Background="Pink" CornerRadius="150" Width="40" Height="35"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10" Padding="5">
+                        <Label Content="DJ" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" Foreground="White" />
+                    </Border>
+                </Grid>
+            </DockPanel>
+
+
+        </StackPanel>
+
+        <!--#endregion-->
 
 
     </Grid>
